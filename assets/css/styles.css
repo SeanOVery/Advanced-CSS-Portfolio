@@ -1,6 +1,6 @@
 :root {
     --bg-color: rgba(48, 94, 191, 0.7);
-    --main-text-color: rgba();
+    --main-text-color: rgba(252, 252, 252, 0.692);
     --secondary-text-color: rgba();
 }
 
@@ -15,4 +15,64 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+}
+
+.hero-image {
+    background-image: url(../images/hero-3.png);
+    height: 300px;
+    margin-top: -16px;
+    filter: contrast(1);
+    background-position: center;
+    background-size: cover;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h1{
+    position: relative;
+    flex: 1 1;
+    font-size: 60px;
+    color: var(--main-text-color);
+    margin: 10px;
+    text-align: center;
+}
+
+.hero-text p {
+    position: relative;
+    flex: 1 1;
+    font-size: 30px;
+    color: var(--main-text-color);
+    text-align: center;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main article {
+    flex: 1;
+    padding: 80px;
+    text-align: left;
+    border-right: solid;
+    border-width: 5px;
+}
+
+.projects {
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.projects article {
+    flex: 0 0 300px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 100px 0 20px 0;
 }
