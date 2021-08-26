@@ -1,0 +1,18 @@
+:root {
+    --bg-color: rgba(48, 94, 191, 0.7);
+    --main-text-color: rgba();
+    --secondary-text-color: rgba();
+}
+
+header {
+    background-color: var(--bg-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
