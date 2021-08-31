@@ -197,6 +197,7 @@ footer p {
         width: 100%;
         padding: 15px 0;
         border-right: none;
+        border-bottom: 4px dotted var(--main-text-color);
     }
 
     .left p {
