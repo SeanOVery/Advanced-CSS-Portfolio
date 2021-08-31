@@ -66,6 +66,7 @@ nav a {
 
 main {
     display: flex;
+    flex-direction: row;
 }
 
 .left {
@@ -75,6 +76,10 @@ main {
     padding: 0 15px;
     background-color: var(--bg-color-3);
     color: var(--main-text-color);
+}
+
+.left p, .left h2 {
+    text-align: center;
 }
 
 .projects {
@@ -119,4 +124,30 @@ footer {
 
 footer p {
     margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .left {
+        width: 100%;
+        padding: 15px 0;
+        border-right: none;
+    }
+
+    .left p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .projects {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    nav {
+        justify-content: center;
+    }
 }
