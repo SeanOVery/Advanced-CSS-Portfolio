@@ -8,12 +8,10 @@
     --gradient-bg-reverse: linear-gradient( var(--bg-color-3) 0%, var(--bg-color) 100%);
 }
 
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-
 
 header {
     text-align: right;
@@ -42,6 +40,7 @@ nav a {
     border-width: 1px;
     padding: 20px 15px;
     margin: 0px 2px 15px 2px;
+    color: var(--main-text-color);
 }
 
 nav a:visited {
@@ -174,8 +173,6 @@ main {
 #project6 {
 
 }
-
-
 
 footer {
     display: flex;
