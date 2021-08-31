@@ -3,7 +3,9 @@
     --bg-color-2:  rgba(75, 142, 196, 0.7);
     --bg-color-3: rgba(30, 30, 30, 1);
     --main-text-color: rgba(252, 252, 252, 0.692);
-    --secondary-text-color: rgba();
+    --secondary-text-color: rgb(74, 173, 212);
+    --gradient-bg: linear-gradient( var(--bg-color) 0%, var(--bg-color-3) 100%);
+    --gradient-bg-reverse: linear-gradient( var(--bg-color-3) 0%, var(--bg-color) 100%);
 }
 
 
@@ -12,25 +14,38 @@ body {
     font-weight: 300;
 }
 
+
 header {
-    text-align: center;
-    background-color: var(--bg-color);
+    text-align: right;
     margin: 0;
+    background-color: var(--bg-color);
     padding: 30px 0;
+    color: var(--main-text-color);
+}
+
+header h1 {
+    margin-right: 3%;
 }
 
 nav {
     display: flex;
     margin: 0;
-    background-color: var(--bg-color);
+    background-image: var(--gradient-bg);
     flex-direction: row;
     justify-content: flex-end;
+    padding-right: 5px;
 }
 
 nav a {
-    background-color: var(--bg-color-2);
+    background-image: var(--gradient-bg-reverse);
+    border-style: dotted;
+    border-width: 1px;
     padding: 20px 15px;
-    margin: 0 2px;
+    margin: 0px 2px 15px 2px;
+}
+
+nav a:visited {
+    color: var(--main-text-color)
 }
 
 .hero-image {
@@ -40,6 +55,7 @@ nav a {
     background-position: center;
     background-size: cover;
     margin: 0;
+    border-bottom: 4px dotted var(--main-text-color);
 }
 .hero-text {
     display: flex;
@@ -71,8 +87,7 @@ main {
 
 .left {
     width: 25%;
-    border-style: dotted dotted dotted none;
-    border-width: 4px;
+    border-right: 4px dotted var(--main-text-color);
     padding: 0 15px;
     background-color: var(--bg-color-3);
     color: var(--main-text-color);
@@ -88,9 +103,6 @@ main {
     width: 75%;
     align-items: center;
     background-color: var(--bg-color-3);
-    border-style: dotted none;
-    border-color: var(--main-text-color);
-    border-width: 4px;
     padding: 0 15px;
 }
 
@@ -114,16 +126,69 @@ main {
     background-color: var(--bg-color);
 }
 
+.card, .maincard {
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 20px;
+    margin: 2% 1% 1% 1%;
+    border-color: var(--main-text-color);
+}
+
+.card h3, .maincard h3 {
+    color: var(--secondary-text-color);
+    position: relative;
+    text-align: center;
+    border-style: solid;
+    border-color: var(--main-text-color);
+    width: 80%;
+    border-radius: 0 15px 15px 0;
+    margin: 0 20% 0 0%;
+    font-size: xx-large;
+    transition: all 1s ease-in-out;
+    background-color: var(--bg-color-3);
+}
+
+#project1 {
+    background-image: url(../images/css-cheatsheet.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+
+#project2 {
+
+}
+
+#project3 {
+
+}
+
+#project4 {
+
+}
+
+#project5 {
+
+}
+
+#project6 {
+
+}
+
+
+
 footer {
     display: flex;
     flex-direction: row;
-    background-color: var(--bg-color);
+    background-image: var(--gradient-bg-reverse);
     margin: 0;
     padding: 30px 0;
+    border-top: 4px dotted var(--main-text-color);
 }
 
 footer p {
     margin: 0 10px;
+    color: var(--main-text-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -149,5 +214,10 @@ footer p {
 
     nav {
         justify-content: center;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-right: 0;
     }
 }
