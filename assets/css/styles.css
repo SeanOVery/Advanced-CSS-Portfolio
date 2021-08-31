@@ -4,11 +4,76 @@
     --secondary-text-color: rgba();
 }
 
-body {
-    margin: -21px 0;
+* {
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.left {
+    width: 300px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    margin: 5px 10px;
+    background-color: var(--bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    margin: .5rem 0;
+}
+
+
+
+/* header {
+    background-color: var(--bg-color);
+}
+
+nav {
     background-color: var(--bg-color);
 }
 
@@ -102,4 +167,4 @@ footer h2 {
     list-style-type: none;
     font-size: 20px;
     display: inline;
-}
+}  */
