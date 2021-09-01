@@ -35,12 +35,14 @@ nav {
 }
 
 nav a {
-    background-image: var(--gradient-bg-reverse);
-    border-style: dotted;
-    border-width: 1px;
+    background-color: var(--bg-color-3);
+    border-style: solid;
+    border-width: 2px;
     padding: 20px 15px;
-    margin: 0px 2px 15px 2px;
+    margin: 0px 4px 5px 4px;
     color: var(--main-text-color);
+    text-decoration: none;
+    font-size: medium;
 }
 
 nav a:visited {
@@ -50,12 +52,12 @@ nav a:visited {
 .hero-image {
     background-image: url(../images/hero.png);
     height: 300px;
-    filter: contrast(1);
     background-position: center;
     background-size: cover;
     margin: 0;
     border-bottom: 4px dotted var(--main-text-color);
 }
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -116,6 +118,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    color: var(--main-text-color);
 }
 
 .card {
@@ -131,6 +134,15 @@ main {
     padding-bottom: 20px;
     margin: 2% 1% 1% 1%;
     border-color: var(--main-text-color);
+}
+
+.cards a, .projects a {
+    text-decoration: none;
+}
+
+.cards a:visited, .projects a:visited {
+    color: var(--main-text-color);
+    text-decoration: none;
 }
 
 .card h3, .maincard h3 {
@@ -183,12 +195,20 @@ footer {
     border-top: 4px dotted var(--main-text-color);
 }
 
-footer p {
+footer p, footer a {
+    width: 25%;
     margin: 0 10px;
     color: var(--main-text-color);
+    border-style: solid;
+    border-width: 4px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: var(--bg-color-3);
+    font-size: xx-large;
+    text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     main {
         flex-direction: column;
     }
