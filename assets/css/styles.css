@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-    margin-right: 3%;
+    margin-right: 4%;
 }
 
 nav {
@@ -43,6 +43,7 @@ nav a {
     color: var(--main-text-color);
     text-decoration: none;
     font-size: medium;
+    font-weight: bold;
 }
 
 nav a:visited {
@@ -237,5 +238,15 @@ footer p, footer a {
     header h1 {
         text-align: center;
         margin-right: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p, footer a {
+        width: 80%;
+        margin: 10px 0;
     }
 }
