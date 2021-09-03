@@ -24,7 +24,7 @@ header {
 
 header h1 {
     margin-right: 30px;
-    padding-top: 30px;
+    padding-top: 40px;
     float:right
 }
 
@@ -78,10 +78,11 @@ nav a:visited {
 .hero-text h1{
     position: relative;
     flex: 1 1;
-    font-size: 60px;
+    font-size: 40px;
     color: var(--main-text-color);
-    margin: 10px;
+    margin: 100px 10px;
     text-align: center;
+    
 }
 
 .hero-text p {
@@ -271,6 +272,10 @@ footer p, footer a {
         margin: 10px 0;
     }
 
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
 
 }
 
@@ -291,5 +296,9 @@ footer p, footer a {
 
     nav {
         padding-top: 15px;
+    }
+    
+    .hero-text h1 {
+        font-size: 25px;
     }
 }
