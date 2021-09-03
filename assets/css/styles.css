@@ -179,23 +179,38 @@ main {
 }
 
 #project2 {
-
+    background-image: url(../images/rock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
 }
 
 #project3 {
-
+    background-image: url(../images/password.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
 }
 
 #project4 {
-
+    background-image: url(../images/placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
 }
 
 #project5 {
-
+    background-image: url(../images/placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
 }
 
 #project6 {
-
+    background-image: url(../images/placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
 }
 
 footer {
