@@ -7,11 +7,15 @@
     --gradient-bg: linear-gradient( var(--bg-color) 0%, var(--bg-color-3) 100%);
     --gradient-bg-reverse: linear-gradient( var(--bg-color-3) 0%, var(--bg-color) 100%);
 }
+/* Variables for various colors and gradients used throughout */
+
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+/* Setting font */
+
 
 header {
     text-align: right;
@@ -35,6 +39,8 @@ header h1 {
     margin-left: 10px;
     margin-top: 10px;
 }
+/* alignment of header elements */
+
 
 nav {
     display: flex;
@@ -60,6 +66,8 @@ nav a {
 nav a:visited {
     color: var(--main-text-color)
 }
+/* Navbar alignment; Flexbox setup for responsiveness */
+
 
 .hero-image {
     background-image: url(../images/hero.png);
@@ -84,15 +92,8 @@ nav a:visited {
     text-align: center;
     
 }
+/*Setup for hero image and text. Used flexbox but could prob simplify */
 
-.hero-text p {
-    position: relative;
-    flex: 1 1;
-    font-size: 30px;
-    color: var(--main-text-color);
-    text-align: center;
-    margin: 10px;
-}
 
 main {
     display: flex;
@@ -119,6 +120,8 @@ main {
     background-color: var(--bg-color-3);
     padding: 0 15px;
 }
+/* Flexbox depth 0 and setup of flexbox depth 1, sets up 2 items left and right(eventually up and down for smaller screens) */
+
 
 .maincard {
     width: 80%;
@@ -133,6 +136,8 @@ main {
     justify-content: center;
     color: var(--main-text-color);
 }
+/* Flexbox depth 1 and setup of depth 2, sets up big box on top and smaller project boxes on bottom */
+
 
 .card {
     width: 400px;
@@ -171,6 +176,8 @@ main {
     transition: all 1s ease-in-out;
     background-color: var(--bg-color-3);
 }
+/* Flexbox depth 2 details and a few general styles applied to both the large card in depth 1 and the small cards in depth 2 */
+
 
 #project1 {
     background-image: url(../images/css-cheatsheet.png);
@@ -213,6 +220,8 @@ main {
     background-repeat: no-repeat;
     color: var(--main-text-color);
 }
+/* Backgrounds for project boxes */
+
 
 footer {
     display: flex;
@@ -235,6 +244,8 @@ footer p, footer a {
     font-size: xx-large;
     text-align: center;
 }
+/* Setting up footer as flexbox and styling  */
+
 
 @media screen and (max-width: 1080px) {
     main {
@@ -278,6 +289,8 @@ footer p, footer a {
 
 
 }
+/* Adjusting to fit smaller screens eg tablet, horizontal monitor. Mainly converting some row flexboxes to column */
+
 
 @media screen and (max-width: 768px) {
     
@@ -302,3 +315,4 @@ footer p, footer a {
         font-size: 25px;
     }
 }
+/* Adjusting to fit phone sized devices */
