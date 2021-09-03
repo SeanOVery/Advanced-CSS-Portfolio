@@ -273,3 +273,23 @@ footer p, footer a {
 
 
 }
+
+@media screen and (max-width: 768px) {
+    
+    .maincard{
+        height: 200px;
+    }
+    
+    .card {
+        width: 150px;
+        height: 75px;
+    }
+
+    .card h3, .maincard h3 {
+        font-size: medium;
+    }
+
+    nav {
+        padding-top: 15px;
+    }
+}
