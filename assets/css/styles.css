@@ -112,6 +112,10 @@ main {
     text-align: center;
 }
 
+.left p {
+    font-size: larger;
+}
+
 .projects {
     display: flex;
     flex-direction: column;

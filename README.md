@@ -23,5 +23,9 @@ Link to the live site [here.](https://seanovery.github.io/Sean-O-Very-CSS-Portfo
 ---
 
 ## Preview
-Image to be added once project is 100% complete
-<!-- ![]() -->
+
+![Full Size](./assets/images/screenshot-1.png)
+
+---
+
+![Mobile](./assets/images/screenshot-2.png)
